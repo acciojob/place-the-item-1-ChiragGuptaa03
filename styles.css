@@ -1,19 +1,26 @@
-
-/* Your CSS Code here. */
+/* Flexbox holder */
 .holder {
-    display: flex;               
-    flex-wrap: wrap;             
-    justify-content: space-between; 
-    align-items: center;        
-    gap: 10px;                   
-    width: 100%;                 
-    padding: 10px;               
-    box-sizing: border-box;     
+    display: flex;               /* enable flexbox */
+    flex-wrap: wrap;             /* allow items to move to next row */
+    justify-content: space-between; /* space between items, first and last touch edges */
+    align-items: center;         /* vertically center items */
+    gap: 10px;                   /* spacing between items */
+    width: 100%;                 /* full container width */
+    padding: 10px;               /* optional padding */
+    box-sizing: border-box;      /* include padding in width calculation */
+    background-color: #f0f0f0;  /* light background for holder */
 }
 
+/* Individual flex items */
 .item {
-    width: 100px;                
-    height: 100px;               
-    background-color: lightblue;
-    flex-shrink: 0;              
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50;  /* green background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    flex-shrink: 0;              /* prevent shrinking */
+    border-radius: 5px;          /* optional styling */
 }
